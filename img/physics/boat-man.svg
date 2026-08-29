@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 330" width="640" height="330">
+  <!-- 人船模型：初始（船 180..380，人站船左端）→ 末态（船左移 80px，人对地右移 120px；比例 50px/m） -->
+  <defs>
+    <marker id="bm-a" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#444"/>
+    </marker>
+    <marker id="bm-r" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#c62828"/>
+    </marker>
+    <marker id="bm-g" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#2e7d32"/>
+    </marker>
+  </defs>
+  <text x="320" y="18" font-size="12.5" fill="#444" font-family="sans-serif" text-anchor="middle">人船模型（m=40kg，M=60kg，L=4m，水平无外力）：<tspan font-weight="bold">位移是对地的，不是对船的！</tspan></text>
+  <!-- ===== 初始 t=0：船 180..380，人站船左端 180 ===== -->
+  <line x1="40" y1="152" x2="600" y2="152" stroke="#64b5f6" stroke-width="1.6" opacity="0.6"/>
+  <rect x="180" y="108" width="200" height="34" fill="#d7ccc8" stroke="#795548" stroke-width="2"/>
+  <circle cx="180" cy="86" r="8" fill="#333"/>
+  <line x1="180" y1="94" x2="180" y2="110" stroke="#333" stroke-width="2.5"/>
+  <line x1="180" y1="110" x2="172" y2="118" stroke="#333" stroke-width="2"/>
+  <line x1="180" y1="110" x2="188" y2="118" stroke="#333" stroke-width="2"/>
+  <text x="280" y="131" font-size="11.5" fill="#444" font-family="sans-serif" text-anchor="middle">L=4m</text>
+  <text x="52" y="95" font-size="11.5" fill="#666" font-family="sans-serif">t=0：静止，总动量为 0</text>
+  <!-- ===== 末态：船左移 80px → 100..300，人相对船走 4m → 站船右端 300 ===== -->
+  <line x1="40" y1="282" x2="600" y2="282" stroke="#64b5f6" stroke-width="1.6" opacity="0.6"/>
+  <rect x="100" y="236" width="200" height="34" fill="#d7ccc8" stroke="#795548" stroke-width="2"/>
+  <circle cx="300" cy="214" r="8" fill="#333"/>
+  <line x1="300" y1="222" x2="300" y2="238" stroke="#333" stroke-width="2.5"/>
+  <line x1="300" y1="238" x2="292" y2="246" stroke="#333" stroke-width="2"/>
+  <line x1="300" y1="238" x2="308" y2="246" stroke="#333" stroke-width="2"/>
+  <text x="200" y="259" font-size="11.5" fill="#444" font-family="sans-serif" text-anchor="middle">L=4m</text>
+  <text x="52" y="222" font-size="11.5" fill="#666" font-family="sans-serif">t：人停在船右端</text>
+  <!-- ===== 位移箭头（对地）：红=人 180→300；绿=船 180→100 ===== -->
+  <line x1="180" y1="172" x2="300" y2="172" stroke="#c62828" stroke-width="2" marker-start="url(#bm-r)" marker-end="url(#bm-r)"/>
+  <text x="240" y="165" font-size="11.5" fill="#c62828" font-family="sans-serif" text-anchor="middle">人对地 +2.4m</text>
+  <line x1="180" y1="200" x2="100" y2="200" stroke="#2e7d32" stroke-width="2" marker-start="url(#bm-g)" marker-end="url(#bm-g)"/>
+  <text x="140" y="192" font-size="11.5" fill="#2e7d32" font-family="sans-serif" text-anchor="middle">船后退 1.6m</text>
+  <!-- 注释 -->
+  <text x="320" y="308" font-size="11.5" fill="#666" font-family="sans-serif" text-anchor="middle">x人 : x船 = M : m = 60 : 40 = 3 : 2，且 |x人|+|x船| = L ⇒ x人=2.4m、|x船|=1.6m（方向相反）</text>
+</svg>
