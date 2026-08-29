@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 245" width="320" height="245">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#444"/>
+    </marker>
+  </defs>
+  <!-- 坐标系：x 轴为平衡位置 y=0（170px），y 轴向上为正 -->
+  <line x1="30" y1="170" x2="300" y2="170" stroke="#444" stroke-width="1.6" marker-end="url(#ah)"/>
+  <line x1="30" y1="170" x2="30" y2="30" stroke="#444" stroke-width="1.6" marker-end="url(#ah)"/>
+  <text x="292" y="190" font-size="11" fill="#444" font-family="sans-serif">x/m</text>
+  <!-- 刻度：0~8m，λ=4m（峰在 x=2、6） -->
+  <line x1="98" y1="170" x2="98" y2="176" stroke="#444" stroke-width="1.2"/>
+  <text x="92" y="188" font-size="10" fill="#444" font-family="sans-serif">2</text>
+  <line x1="166" y1="170" x2="166" y2="176" stroke="#444" stroke-width="1.2"/>
+  <text x="160" y="188" font-size="10" fill="#444" font-family="sans-serif">4</text>
+  <line x1="234" y1="170" x2="234" y2="176" stroke="#444" stroke-width="1.2"/>
+  <text x="228" y="188" font-size="10" fill="#444" font-family="sans-serif">6</text>
+  <!-- 波形（λ=4m，波峰在 x=2m、6m） -->
+  <path d="M30,218.0 L34,217.2 L38,214.8 L42,210.8 L46,205.5 L50,198.9 L54,191.4 L58,183.1 L62,174.4 L66,165.6 L70,156.9 L74,148.6 L78,141.1 L82,134.5 L86,129.2 L90,125.2 L94,122.8 L98,122.0 L102,122.8 L106,125.2 L110,129.2 L114,134.5 L118,141.1 L122,148.6 L126,156.9 L130,165.6 L134,174.4 L138,183.1 L142,191.4 L146,198.9 L150,205.5 L154,210.8 L158,214.8 L162,217.2 L166,218.0 L170,217.2 L174,214.8 L178,210.8 L182,205.5 L186,198.9 L190,191.4 L194,183.1 L198,174.4 L202,165.6 L206,156.9 L210,148.6 L214,141.1 L218,134.5 L222,129.2 L226,125.2 L230,122.8 L234,122.0 L238,122.8 L242,125.2 L246,129.2 L250,134.5 L254,141.1 L258,148.6 L262,156.9 L266,165.6 L270,174.4 L274,183.1 L278,191.4 L282,198.9 L286,205.5 L290,210.8 L294,214.8 L298,217.2 L302,218.0"
+        fill="none" stroke="#1565c0" stroke-width="2.2"/>
+  <!-- 波长标注（相邻波峰 2m~6m） -->
+  <line x1="98" y1="122" x2="98" y2="105" stroke="#c62828" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="234" y1="122" x2="234" y2="105" stroke="#c62828" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="98" y1="108" x2="234" y2="108" stroke="#c62828" stroke-width="1.4"/>
+  <text x="132" y="101" font-size="12" fill="#c62828" font-family="sans-serif">λ=4 m</text>
+  <text x="78" y="114" font-size="12" fill="#1565c0" font-family="sans-serif">波峰</text>
+  <!-- 传播方向 -->
+  <line x1="240" y1="40" x2="288" y2="40" stroke="#444" stroke-width="1.6" marker-end="url(#ah)"/>
+  <text x="188" y="36" font-size="12" fill="#444" font-family="sans-serif">传播方向 +x</text>
+  <text x="20" y="222" font-size="10" fill="#666" font-family="sans-serif">简谐横波：相邻波峰间距 = 波长 λ，质点只在平衡位置附近振动</text>
+</svg>
