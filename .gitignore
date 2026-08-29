@@ -1,0 +1,10 @@
+node_modules/
+dist/
+public/content/
+e2e-shots/
+*.log
+.DS_Store
+Thumbs.db
+.dsh-handoff/
+docs/_tmp-*.json
+docs/shots/
