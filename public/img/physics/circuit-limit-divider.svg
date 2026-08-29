@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="345" viewBox="0 0 720 345" font-family="sans-serif">
+  <rect width="720" height="345" fill="#1a1a1a"/>
+  <!-- ============ 面板①：限流 ============ -->
+  <text x="40" y="32" fill="#1565c0" font-size="16">① 限流接法（滑变与 Rx 串联）</text>
+  <!-- 主回路 -->
+  <path d="M100,70 L100,95 M100,121 L100,250 M100,250 L135,250 M175,250 L330,250 M330,70 L330,107 M330,133 L330,190 M330,222 L330,250 M330,70 L100,70" stroke="#ccc" stroke-width="1.6" fill="none"/>
+  <!-- 电池 E -->
+  <path d="M100,95 L100,115" stroke="#ccc" stroke-width="3"/>
+  <path d="M100,115 L100,121" stroke="#ccc" stroke-width="7"/>
+  <text x="82" y="110" fill="#c62828" font-size="13">E</text>
+  <!-- 开关 S -->
+  <circle cx="135" cy="250" r="3.5" fill="#1a1a1a" stroke="#ccc" stroke-width="1.4"/>
+  <circle cx="175" cy="250" r="3.5" fill="#1a1a1a" stroke="#ccc" stroke-width="1.4"/>
+  <path d="M135,250 L175,232" stroke="#ccc" stroke-width="1.6"/>
+  <text x="155" y="242" fill="#666" font-size="12">S</text>
+  <!-- 滑变锯齿（顶部右段） -->
+  <path d="M245,70 L250,58 L260,70 L270,58 L280,70 L290,58 L300,70 L310,58 L320,70" stroke="#e65100" stroke-width="1.6" fill="none"/>
+  <path d="M285,52 L285,45" stroke="#e65100" stroke-width="1.4"/>
+  <text x="272" y="42" fill="#e65100" font-size="12">R 滑</text>
+  <!-- 电流表 A -->
+  <circle cx="330" cy="120" r="13" fill="#1a1a1a" stroke="#ccc" stroke-width="1.5"/>
+  <text x="330" y="125" text-anchor="middle" fill="#ccc" font-size="13">A</text>
+  <!-- Rx -->
+  <rect x="318" y="190" width="24" height="32" fill="none" stroke="#ccc" stroke-width="1.5"/>
+  <text x="330" y="211" text-anchor="middle" fill="#ccc" font-size="12">Rx</text>
+  <!-- 电压表 V 并 Rx -->
+  <path d="M330,190 L270,190 L270,196 M270,216 L270,222 L330,222" stroke="#ccc" stroke-width="1.4" fill="none"/>
+  <circle cx="270" cy="206" r="13" fill="#1a1a1a" stroke="#ccc" stroke-width="1.5"/>
+  <text x="270" y="211" text-anchor="middle" fill="#ccc" font-size="13">V</text>
+  <!-- 面板①注解 -->
+  <text x="60" y="272" fill="#2e7d32" font-size="12">Rx 与滑变 R 串联（干路电流全部过滑变）</text>
+  <text x="60" y="296" fill="#1565c0" font-size="12">调压范围：E·Rx/(Rx+R) ～ E（调不到 0）</text>
+  <!-- ============ 面板②：分压 ============ -->
+  <text x="400" y="32" fill="#1565c0" font-size="16">② 分压接法（滑变 A、B 跨接电源）</text>
+  <!-- 主回路 -->
+  <path d="M445,90 L445,70 M445,70 L650,70 M525,70 L525,250 M445,250 L525,250 M445,116 L445,250" stroke="#ccc" stroke-width="1.6" fill="none"/>
+  <!-- 电池 E（正极朝上） -->
+  <path d="M445,90 L445,110" stroke="#ccc" stroke-width="3"/>
+  <path d="M445,110 L445,116" stroke="#ccc" stroke-width="7"/>
+  <text x="427" y="105" fill="#c62828" font-size="13">E</text>
+  <!-- 滑变横放（A 右端接电源正，B 左端回负） -->
+  <path d="M525,70 L530,58 L540,70 L550,58 L560,70 L570,58 L580,70 L590,58 L600,70 L610,58 L620,70 L630,58 L640,70" stroke="#e65100" stroke-width="1.6" fill="none"/>
+  <text x="540" y="46" fill="#e65100" font-size="12">R 滑（A—B）</text>
+  <!-- 滑片 P 引线 -->
+  <path d="M590,70 L590,240" stroke="#e65100" stroke-width="1.6" fill="none"/>
+  <text x="574" y="110" fill="#e65100" font-size="12">P</text>
+  <!-- 负载支路：A 端 → 电流表 → Rx → 回 P -->
+  <path d="M650,70 L700,70 L700,107 M700,133 L700,160 M700,192 L700,240 L590,240" stroke="#ccc" stroke-width="1.6" fill="none"/>
+  <circle cx="700" cy="120" r="13" fill="#1a1a1a" stroke="#ccc" stroke-width="1.5"/>
+  <text x="700" y="125" text-anchor="middle" fill="#ccc" font-size="13">A</text>
+  <rect x="688" y="160" width="24" height="32" fill="none" stroke="#ccc" stroke-width="1.5"/>
+  <text x="700" y="181" text-anchor="middle" fill="#ccc" font-size="12">Rx</text>
+  <!-- 电压表 V 并 Rx -->
+  <path d="M700,160 L658,160 L658,170 M658,196 L658,205 L700,205 L700,192" stroke="#ccc" stroke-width="1.4" fill="none"/>
+  <circle cx="658" cy="183" r="13" fill="#1a1a1a" stroke="#ccc" stroke-width="1.5"/>
+  <text x="658" y="188" text-anchor="middle" fill="#ccc" font-size="13">V</text>
+  <!-- 面板②注解 -->
+  <text x="430" y="272" fill="#2e7d32" font-size="12">滑变 A、B 跨电源（有附加电流）</text>
+  <text x="430" y="294" fill="#2e7d32" font-size="12">注意额定电流需够大</text>
+  <text x="430" y="316" fill="#1565c0" font-size="12">负载电压：0 ～ E（P 上移增大）</text>
+  <!-- 总结行 -->
+  <text x="40" y="330" fill="#666" font-size="13">要点：限流「调不到 0、R 选大」；分压「0 起调、R 选小、用于多组数据 / 伏安特性曲线」</text>
+</svg>
