@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 190" width="280" height="190">
+  <defs>
+    <marker id="ah-black" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#222"/>
+    </marker>
+    <marker id="ah-red" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#c62828"/>
+    </marker>
+    <marker id="ah-orange" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#e65100"/>
+    </marker>
+  </defs>
+  <!-- 物体受三力：重力 G、水平推力 F、绳拉力 T（三力平衡） -->
+  <!-- 参考物：小球用绳子挂在墙上 + 水平力推开 -->
+  <!-- G：竖直向下 -->
+  <line x1="90" y1="30" x2="90" y2="90" stroke="#222" stroke-width="2" marker-end="url(#ah-black)"/>
+  <text x="97" y="86" font-size="14" fill="#222" font-family="sans-serif">G</text>
+  <!-- F：水平向右（接在 G 终点） -->
+  <line x1="90" y1="90" x2="150" y2="90" stroke="#c62828" stroke-width="2" marker-end="url(#ah-red)"/>
+  <text x="146" y="82" font-size="14" fill="#c62828" font-family="sans-serif">F</text>
+  <!-- T：从 F 终点回到起点（合力为零，三角形闭合） -->
+  <line x1="150" y1="90" x2="90" y2="30" stroke="#e65100" stroke-width="2" marker-end="url(#ah-orange)"/>
+  <text x="132" y="48" font-size="14" fill="#e65100" font-family="sans-serif">T</text>
+  <!-- θ 标注（G 与 T 的夹角） -->
+  <path d="M90,44 A26,26 0 0 1 110,52" fill="none" stroke="#888" stroke-width="1.2"/>
+  <text x="101" y="42" font-size="13" fill="#555" font-family="sans-serif">θ</text>
+  <text x="20" y="20" font-size="11.5" fill="#666" font-family="sans-serif">三力平衡 ⇒ 首尾相接构成闭合三角形</text>
+</svg>
