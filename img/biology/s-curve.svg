@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 225" width="320" height="225">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#444"/>
+    </marker>
+  </defs>
+  <line x1="40" y1="180" x2="300" y2="180" stroke="#444" stroke-width="1.5" marker-end="url(#ah)"/>
+  <line x1="40" y1="180" x2="40" y2="24" stroke="#444" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="290" y="198" font-size="11" fill="#444" font-family="sans-serif">时间 t</text>
+  <text x="14" y="30" font-size="11" fill="#444" font-family="sans-serif">N</text>
+  <!-- K 线与 K/2 线 -->
+  <line x1="40" y1="40" x2="300" y2="40" stroke="#c62828" stroke-width="1.2" stroke-dasharray="6,4"/>
+  <text x="274" y="36" font-size="12" fill="#c62828" font-family="sans-serif">K</text>
+  <line x1="40" y1="110" x2="300" y2="110" stroke="#2e7d32" stroke-width="1" stroke-dasharray="4,3"/>
+  <text x="274" y="106" font-size="12" fill="#2e7d32" font-family="sans-serif">K/2</text>
+  <!-- S 型曲线（logistic：拐点在 K/2） -->
+  <path d="M40,179.0 L46,178.7 L52,178.3 L58,177.8 L64,177.1 L70,176.3 L76,175.2 L82,173.7 L88,171.9 L94,169.6 L100,166.7 L106,163.0 L112,158.6 L118,153.2 L124,146.8 L130,139.5 L136,131.3 L142,122.5 L148,113.1 L154,103.7 L160,94.5 L166,85.8 L172,77.9 L178,70.9 L184,64.9 L190,59.9 L196,55.7 L202,52.3 L208,49.6 L214,47.4 L220,45.8 L226,44.4 L232,43.4 L238,42.6 L244,42.0 L250,41.5 L256,41.2 L262,40.9 L268,40.7 L274,40.5 L280,40.4 L286,40.3 L292,40.2 L298,40.2"
+        fill="none" stroke="#1565c0" stroke-width="2.2"/>
+  <!-- K/2 拐点 -->
+  <circle cx="150" cy="110" r="4.5" fill="#2e7d32" stroke="none"/>
+  <text x="66" y="132" font-size="11.5" fill="#2e7d32" font-family="sans-serif">拐点（K/2 处增长速率最大）</text>
+  <!-- 右上角插图：增长速率随种群数量变化（抛物线，峰值在 K/2） -->
+  <rect x="52" y="46" width="86" height="52" fill="#f6faf7" stroke="#888" stroke-width="1"/>
+  <line x1="58" y1="92" x2="132" y2="92" stroke="#888" stroke-width="0.8"/>
+  <line x1="58" y1="92" x2="58" y2="54" stroke="#888" stroke-width="0.8"/>
+  <path d="M58,92 C 72,60 118,60 132,92" fill="none" stroke="#e65100" stroke-width="1.6"/>
+  <line x1="95" y1="92" x2="95" y2="48" stroke="#e65100" stroke-width="0.8" stroke-dasharray="3,2"/>
+  <text x="100" y="112" font-size="9.5" fill="#e65100" font-family="sans-serif">增长速率峰值在 K/2</text>
+  <text x="40" y="216" font-size="11" fill="#666" font-family="sans-serif">S 型：K/2 增长最快（可持续捕捞点），K 为环境容纳量</text>
+</svg>
