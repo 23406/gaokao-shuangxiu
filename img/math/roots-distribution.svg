@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 492" width="720" height="492">
+  <!-- 含参二次函数根的分布：四种标准情形（a>0，f(x)=0.5(x-x1)(x-x2)） -->
+  <defs>
+    <marker id="rd-a" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#444"/>
+    </marker>
+  </defs>
+  <!-- 面板边框 -->
+  <rect x="10" y="24" width="340" height="198" fill="#fafafa" stroke="#bbb" stroke-width="0.8"/>
+  <rect x="370" y="24" width="340" height="198" fill="#fafafa" stroke="#bbb" stroke-width="0.8"/>
+  <rect x="10" y="240" width="340" height="198" fill="#fafafa" stroke="#bbb" stroke-width="0.8"/>
+  <rect x="370" y="240" width="340" height="198" fill="#fafafa" stroke="#bbb" stroke-width="0.8"/>
+  <!-- ① 两根都 < k -->
+  <text x="20" y="40" font-size="12.5" fill="#333" font-family="sans-serif">① 两根都 &lt; k ：Δ≥0，f(k)＞0，x₀＜k</text>
+  <line x1="40" y1="135" x2="330" y2="135" stroke="#444" stroke-width="1.2"/>
+  <polyline points="40,70.6 54.4,88 68.9,103.4 83.4,116.8 97.8,128.2 112.3,137.5 126.7,144.9 141.1,150.2 155.6,153.4 170,154.7 184.5,153.9 199,151.1 213.4,146.3 227.8,139.4 242.3,130.6 256.7,119.7 271.2,106.8 285.6,91.8 300.1,74.9 314.6,55.9 329,34.9"
+       fill="none" stroke="#1565c0" stroke-width="2"/>
+  <line x1="295" y1="40" x2="295" y2="135" stroke="#c62828" stroke-width="1.4" stroke-dasharray="5,3"/>
+  <circle cx="295" cy="81.1" r="3.5" fill="#c62828"/>
+  <circle cx="108" cy="135" r="4" fill="#1565c0"/>
+  <circle cx="235.5" cy="135" r="4" fill="#1565c0"/>
+  <text x="295" y="52" font-size="12" fill="#c62828" font-family="sans-serif" text-anchor="middle">k</text>
+  <text x="98" y="152" font-size="11.5" fill="#1565c0" font-family="sans-serif">x₁</text>
+  <text x="226" y="152" font-size="11.5" fill="#1565c0" font-family="sans-serif">x₂</text>
+  <!-- ② 两根都 > k -->
+  <text x="380" y="40" font-size="12.5" fill="#333" font-family="sans-serif">② 两根都 ＞ k ：Δ≥0，f(k)＞0，x₀＞k</text>
+  <line x1="400" y1="135" x2="690" y2="135" stroke="#444" stroke-width="1.2"/>
+  <polyline points="400,27 414,45.2 428,61.9 442,77.1 456,90.8 470,103.1 484,113.9 498,123.3 512,131.2 526,137.6 540,142.5 554,146 568,148 582,148.5 596,147.5 610,145.1 624,141.2 638,135.9 652,129.1 666,120.8 680,111"
+       fill="none" stroke="#1565c0" stroke-width="2"/>
+  <line x1="464" y1="40" x2="464" y2="135" stroke="#c62828" stroke-width="1.4" stroke-dasharray="5,3"/>
+  <circle cx="464" cy="98" r="3.5" fill="#c62828"/>
+  <circle cx="520" cy="135" r="4" fill="#1565c0"/>
+  <circle cx="640" cy="135" r="4" fill="#1565c0"/>
+  <text x="464" y="52" font-size="12" fill="#c62828" font-family="sans-serif" text-anchor="middle">k</text>
+  <text x="510" y="152" font-size="11.5" fill="#1565c0" font-family="sans-serif">x₁</text>
+  <text x="630" y="152" font-size="11.5" fill="#1565c0" font-family="sans-serif">x₂</text>
+  <!-- ③ 一根 < k < 一根 -->
+  <text x="20" y="256" font-size="12.5" fill="#333" font-family="sans-serif">③ k 夹在两根之间：f(k)＜0（无需 Δ，必有两根）</text>
+  <line x1="40" y1="375" x2="330" y2="375" stroke="#444" stroke-width="1.2"/>
+  <polyline points="40,310.6 54.4,328 68.9,343.4 83.4,356.8 97.8,368.2 112.3,377.5 126.7,384.9 141.1,390.2 155.6,393.4 170,394.7 184.5,393.9 199,391.1 213.4,386.3 227.8,379.4 242.3,370.6 256.7,359.7 271.2,346.8 285.6,331.8 300.1,314.9 314.6,295.9 329,274.9"
+       fill="none" stroke="#1565c0" stroke-width="2"/>
+  <line x1="176" y1="280" x2="176" y2="375" stroke="#c62828" stroke-width="1.4" stroke-dasharray="5,3"/>
+  <circle cx="176" cy="394.6" r="3.5" fill="#c62828"/>
+  <circle cx="108" cy="375" r="4" fill="#1565c0"/>
+  <circle cx="235.5" cy="375" r="4" fill="#1565c0"/>
+  <text x="176" y="292" font-size="12" fill="#c62828" font-family="sans-serif" text-anchor="middle">k</text>
+  <text x="98" y="392" font-size="11.5" fill="#1565c0" font-family="sans-serif">x₁</text>
+  <text x="226" y="392" font-size="11.5" fill="#1565c0" font-family="sans-serif">x₂</text>
+  <!-- ④ 两根都在 (m,n) -->
+  <text x="380" y="256" font-size="12.5" fill="#333" font-family="sans-serif">④ 两根都 ∈(m,n)：Δ≥0，f(m)＞0，f(n)＞0，m＜x₀＜n</text>
+  <line x1="400" y1="375" x2="690" y2="375" stroke="#444" stroke-width="1.2"/>
+  <polyline points="400,310.6 414.4,328 428.9,343.4 443.4,356.8 457.8,368.2 472.3,377.5 486.7,384.9 501.1,390.2 515.6,393.4 530,394.7 544.5,393.9 559,391.1 573.4,386.3 587.8,379.4 602.3,370.6 616.7,359.7 631.2,346.8 645.6,331.8 660.1,314.9 674.6,295.9 689,274.9"
+       fill="none" stroke="#1565c0" stroke-width="2"/>
+  <line x1="425.5" y1="280" x2="425.5" y2="375" stroke="#2e7d32" stroke-width="1.4" stroke-dasharray="5,3"/>
+  <line x1="638" y1="280" x2="638" y2="375" stroke="#2e7d32" stroke-width="1.4" stroke-dasharray="5,3"/>
+  <circle cx="425.5" cy="340" r="3.5" fill="#2e7d32"/>
+  <circle cx="638" cy="340" r="3.5" fill="#2e7d32"/>
+  <circle cx="520" cy="375" r="4" fill="#1565c0"/>
+  <circle cx="640" cy="375" r="4" fill="#1565c0"/>
+  <text x="425.5" y="292" font-size="12" fill="#2e7d32" font-family="sans-serif" text-anchor="middle">m</text>
+  <text x="638" y="292" font-size="12" fill="#2e7d32" font-family="sans-serif" text-anchor="middle">n</text>
+  <text x="508" y="392" font-size="11.5" fill="#1565c0" font-family="sans-serif">x₁</text>
+  <text x="630" y="392" font-size="11.5" fill="#1565c0" font-family="sans-serif">x₂</text>
+  <!-- 底注 -->
+  <text x="360" y="462" font-size="11.5" fill="#666" font-family="sans-serif" text-anchor="middle">红点=端点值 f(k)/f(m)/f(n) 的位置：a＞0 时看它落在 x 轴上方还是下方；a＜0 时所有"＞"反号</text>
+  <text x="360" y="484" font-size="11.5" fill="#666" font-family="sans-serif" text-anchor="middle">红线=待检验的竖线位置（k 或 m、n），蓝曲线上的红/绿点即对应函数值</text>
+</svg>
