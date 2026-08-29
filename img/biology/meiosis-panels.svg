@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500" height="440" viewBox="0 0 500 440" font-family="sans-serif">
+  <!-- 甲：有丝分裂后期（2n=4 → 8 条 I 形染色体，两对同源：深=长、浅=短） -->
+  <g>
+    <rect x="10" y="10" width="240" height="210" rx="8" fill="#101418"/>
+    <text x="24" y="34" fill="#c9d1d9" font-size="16">甲</text>
+    <ellipse cx="130" cy="115" rx="88" ry="70" fill="none" stroke="#9aa4b2" stroke-width="1.5"/>
+    <g stroke="#8ab4f8" stroke-width="3.5" stroke-linecap="round">
+      <line x1="85"  y1="58" x2="85"  y2="82"/>
+      <line x1="175" y1="58" x2="175" y2="82"/>
+      <line x1="85"  y1="148" x2="85"  y2="172"/>
+      <line x1="175" y1="148" x2="175" y2="172"/>
+    </g>
+    <g stroke="#f2a33c" stroke-width="3.5" stroke-linecap="round">
+      <line x1="110" y1="58" x2="110" y2="82"/>
+      <line x1="150" y1="58" x2="150" y2="82"/>
+      <line x1="110" y1="148" x2="110" y2="172"/>
+      <line x1="150" y1="148" x2="150" y2="172"/>
+    </g>
+  </g>
+  <!-- 乙：减数第一次分裂后期（同源分离：每极 1 深 X + 1 浅 X） -->
+  <g>
+    <rect x="265" y="10" width="240" height="210" rx="8" fill="#101418"/>
+    <text x="279" y="34" fill="#c9d1d9" font-size="16">乙</text>
+    <ellipse cx="385" cy="115" rx="88" ry="70" fill="none" stroke="#9aa4b2" stroke-width="1.5"/>
+    <g stroke="#8ab4f8" stroke-width="2.5" stroke-linecap="round">
+      <line x1="346" y1="58" x2="374" y2="82"/>
+      <line x1="346" y1="82" x2="374" y2="58"/>
+      <line x1="346" y1="148" x2="374" y2="172"/>
+      <line x1="346" y1="172" x2="374" y2="148"/>
+    </g>
+    <g stroke="#f2a33c" stroke-width="2.5" stroke-linecap="round">
+      <line x1="396" y1="58" x2="424" y2="82"/>
+      <line x1="396" y1="82" x2="424" y2="58"/>
+      <line x1="396" y1="148" x2="424" y2="172"/>
+      <line x1="396" y1="172" x2="424" y2="148"/>
+    </g>
+  </g>
+  <!-- 丙：减数第二次分裂后期（无同源，每极 1 深 I + 1 浅 I） -->
+  <g>
+    <rect x="10" y="230" width="240" height="210" rx="8" fill="#101418"/>
+    <text x="24" y="254" fill="#c9d1d9" font-size="16">丙</text>
+    <ellipse cx="130" cy="335" rx="88" ry="70" fill="none" stroke="#9aa4b2" stroke-width="1.5"/>
+    <g stroke="#8ab4f8" stroke-width="3.5" stroke-linecap="round">
+      <line x1="100" y1="278" x2="100" y2="302"/>
+      <line x1="100" y1="368" x2="100" y2="392"/>
+    </g>
+    <g stroke="#f2a33c" stroke-width="3.5" stroke-linecap="round">
+      <line x1="145" y1="278" x2="145" y2="302"/>
+      <line x1="145" y1="368" x2="145" y2="392"/>
+    </g>
+  </g>
+  <!-- 丁：有丝分裂中期（4 条 X 排在赤道板） -->
+  <g>
+    <rect x="265" y="230" width="240" height="210" rx="8" fill="#101418"/>
+    <text x="279" y="254" fill="#c9d1d9" font-size="16">丁</text>
+    <ellipse cx="385" cy="335" rx="88" ry="70" fill="none" stroke="#9aa4b2" stroke-width="1.5"/>
+    <line x1="310" y1="335" x2="460" y2="335" stroke="#6e7681" stroke-width="1" stroke-dasharray="5 4"/>
+    <g stroke="#8ab4f8" stroke-width="2.5" stroke-linecap="round">
+      <line x1="321" y1="325" x2="349" y2="345"/>
+      <line x1="321" y1="345" x2="349" y2="325"/>
+      <line x1="421" y1="325" x2="449" y2="345"/>
+      <line x1="421" y1="345" x2="449" y2="325"/>
+    </g>
+    <g stroke="#f2a33c" stroke-width="2.5" stroke-linecap="round">
+      <line x1="355" y1="325" x2="383" y2="345"/>
+      <line x1="355" y1="345" x2="383" y2="325"/>
+      <line x1="387" y1="325" x2="415" y2="345"/>
+      <line x1="387" y1="345" x2="415" y2="325"/>
+    </g>
+  </g>
+</svg>
