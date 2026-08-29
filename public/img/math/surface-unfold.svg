@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 430" width="720" height="430" font-family="sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1565c0"/>
+    </marker>
+  </defs>
+
+  <!-- 面板 1：圆柱侧面展开 -->
+  <text x="40" y="40" font-size="15" fill="#444" font-weight="bold">① 圆柱侧面展开（A/B 底面投影对径 → 半圈）</text>
+  <!-- 展开矩形：宽=6π（560px），高=h=4（120px） -->
+  <rect x="80" y="70" width="560" height="120" fill="none" stroke="#444" stroke-width="2"/>
+  <!-- 辅助：整圈/半圈参考线 -->
+  <line x1="80" y1="190" x2="360" y2="190" stroke="#888" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <line x1="360" y1="190" x2="360" y2="70" stroke="#888" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <!-- 最短路径 -->
+  <line x1="80" y1="190" x2="360" y2="70" stroke="#c62828" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+  <!-- 点位 -->
+  <circle cx="80" cy="190" r="4.5" fill="#c62828"/><text x="64" y="184" font-size="14" fill="#c62828" font-weight="bold">A</text>
+  <circle cx="360" cy="70" r="4.5" fill="#c62828"/><text x="370" y="64" font-size="14" fill="#c62828" font-weight="bold">B</text>
+  <!-- 标注 -->
+  <text x="62" y="135" font-size="13" fill="#555" transform="rotate(-90 62 135)">h = 4</text>
+  <text x="200" y="208" font-size="13" fill="#555">半周长 πr = 3π</text>
+  <text x="230" y="160" font-size="13" fill="#c62828">最短 = √(h² +(πr)²)</text>
+
+  <!-- 面板 2：圆锥侧面展开 -->
+  <text x="40" y="262" font-size="15" fill="#444" font-weight="bold">② 圆锥侧面展开（母线 l = 4，底面 r = 2 → 半圆扇）</text>
+  <!-- 扇形：圆心 P(200,390)，半径 150，θ=180° -->
+  <path d="M350,390 A150,150 0 0 0 50,390" fill="none" stroke="#444" stroke-width="2"/>
+  <line x1="200" y1="390" x2="350" y2="390" stroke="#555" stroke-width="2"/>
+  <line x1="200" y1="390" x2="200" y2="240" stroke="#555" stroke-width="2"/>
+  <!-- 弦 A-B（最短路径） -->
+  <line x1="350" y1="390" x2="200" y2="240" stroke="#c62828" stroke-width="2.5" stroke-dasharray="7 5" marker-end="url(#arr)"/>
+  <!-- 顶点与点位 -->
+  <text x="186" y="410" font-size="14" fill="#555" font-weight="bold">P（顶点）</text>
+  <circle cx="350" cy="390" r="4.5" fill="#c62828"/><text x="360" y="393" font-size="14" fill="#c62828" font-weight="bold">A</text>
+  <circle cx="200" cy="240" r="4.5" fill="#c62828"/><text x="180" y="232" font-size="14" fill="#c62828" font-weight="bold">B</text>
+  <!-- 小弧：圆心角 -->
+  <path d="M230,390 A30,30 0 0 0 200,360" fill="none" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="224" y="372" font-size="12" fill="#2e7d32">θ = 180°</text>
+  <!-- 母线/弧标注 -->
+  <text x="270" y="408" font-size="13" fill="#555">l = 4</text>
+  <text x="178" y="300" font-size="13" fill="#555">l = 4</text>
+  <text x="250" y="236" font-size="13" fill="#1565c0">底面弧 = 半圆周 πr</text>
+  <text x="112" y="405" font-size="11" fill="#888">A′（剪开处）</text>
+  <text x="272" y="288" font-size="13" fill="#c62828">最短 = 4√2</text>
+
+  <!-- 底部法则 -->
+  <line x1="40" y1="424" x2="680" y2="424" stroke="#ccc" stroke-width="1"/>
+  <text x="40" y="421" font-size="13" fill="#666">法则：展开成平面 → 两点间直线；对径点：圆柱半圈 πr；圆锥圆心角差恒为 θ/2（≤180°，直线必在展开图内）</text>
+</svg>
