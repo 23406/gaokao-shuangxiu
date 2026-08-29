@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 470 205" width="470" height="205">
+  <!-- 甲苯苯环上一氯代物：邻 / 间 / 对 -->
+  <text x="235" y="16" font-size="12.5" fill="#444" font-family="sans-serif" text-anchor="middle">固定 −CH₃ 后，苯环其余位置按对称性折叠为 3 类 ⇒ 一氯代物 3 种</text>
+  <defs>
+    <marker id="tc-a" markerWidth="8" markerHeight="8" refX="6.5" refY="4" orient="auto">
+      <path d="M0,0 L7,4 L0,8 z" fill="#1565c0"/>
+    </marker>
+  </defs>
+  <!-- 三个苯环，中心 cx = 90 / 235 / 380，cy = 105，R = 32 -->
+  <!-- 环 1：邻位取代（Cl 在 2 位） -->
+  <g>
+    <polygon points="90,73 117.7,89 117.7,121 90,137 62.3,121 62.3,89" fill="none" stroke="#222" stroke-width="1.8"/>
+    <line x1="87.5" y1="77.3" x2="115.2" y2="93.3" stroke="#222" stroke-width="1.5"/>
+    <line x1="115.2" y1="116.7" x2="87.5" y2="132.7" stroke="#222" stroke-width="1.5"/>
+    <line x1="67.3" y1="121" x2="67.3" y2="89" stroke="#222" stroke-width="1.5"/>
+    <line x1="90" y1="73" x2="90" y2="57" stroke="#222" stroke-width="1.8"/>
+    <text x="90" y="51" font-size="12" fill="#222" font-family="sans-serif" text-anchor="middle">CH<tspan font-size="9" dy="3">3</tspan></text>
+    <line x1="117.7" y1="89" x2="135" y2="77" stroke="#1565c0" stroke-width="1.8" marker-end="url(#tc-a)"/>
+    <text x="139" y="72" font-size="13" fill="#1565c0" font-family="sans-serif">Cl</text>
+    <text x="90" y="162" font-size="12" fill="#555" font-family="sans-serif" text-anchor="middle">邻（2 位）</text>
+  </g>
+  <!-- 环 2：间位取代（Cl 在 3 位） -->
+  <g>
+    <polygon points="235,73 262.7,89 262.7,121 235,137 207.3,121 207.3,89" fill="none" stroke="#222" stroke-width="1.8"/>
+    <line x1="232.5" y1="77.3" x2="260.2" y2="93.3" stroke="#222" stroke-width="1.5"/>
+    <line x1="260.2" y1="116.7" x2="232.5" y2="132.7" stroke="#222" stroke-width="1.5"/>
+    <line x1="212.3" y1="121" x2="212.3" y2="89" stroke="#222" stroke-width="1.5"/>
+    <line x1="235" y1="73" x2="235" y2="57" stroke="#222" stroke-width="1.8"/>
+    <text x="235" y="51" font-size="12" fill="#222" font-family="sans-serif" text-anchor="middle">CH<tspan font-size="9" dy="3">3</tspan></text>
+    <line x1="262.7" y1="121" x2="280" y2="137" stroke="#1565c0" stroke-width="1.8" marker-end="url(#tc-a)"/>
+    <text x="284" y="145" font-size="13" fill="#1565c0" font-family="sans-serif">Cl</text>
+    <text x="235" y="162" font-size="12" fill="#555" font-family="sans-serif" text-anchor="middle">间（3 位）</text>
+  </g>
+  <!-- 环 3：对位取代（Cl 在 4 位） -->
+  <g>
+    <polygon points="380,73 407.7,89 407.7,121 380,137 352.3,121 352.3,89" fill="none" stroke="#222" stroke-width="1.8"/>
+    <line x1="377.5" y1="77.3" x2="405.2" y2="93.3" stroke="#222" stroke-width="1.5"/>
+    <line x1="405.2" y1="116.7" x2="377.5" y2="132.7" stroke="#222" stroke-width="1.5"/>
+    <line x1="357.3" y1="121" x2="357.3" y2="89" stroke="#222" stroke-width="1.5"/>
+    <line x1="380" y1="73" x2="380" y2="57" stroke="#222" stroke-width="1.8"/>
+    <text x="380" y="51" font-size="12" fill="#222" font-family="sans-serif" text-anchor="middle">CH<tspan font-size="9" dy="3">3</tspan></text>
+    <line x1="380" y1="137" x2="380" y2="153" stroke="#1565c0" stroke-width="1.8" marker-end="url(#tc-a)"/>
+    <text x="380" y="167" font-size="13" fill="#1565c0" font-family="sans-serif" text-anchor="middle">Cl</text>
+    <text x="394" y="163" font-size="12" fill="#555" font-family="sans-serif">对（4 位）</text>
+  </g>
+  <!-- 底部说明 -->
+  <text x="235" y="196" font-size="11" fill="#666" font-family="sans-serif" text-anchor="middle">等效关系：2′≡6′（邻）、3′≡5′（间）、4 独立（对）；问“苯环上”只数环上氢</text>
+</svg>
