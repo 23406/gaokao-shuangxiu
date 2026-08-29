@@ -1,0 +1,492 @@
+/* ============================================================
+   高考双修 · 黑客帝国主题
+   ============================================================ */
+:root {
+  --bg: #020503;
+  --bg-panel: rgba(4, 20, 10, 0.85);
+  --bg-panel-solid: #04140b;
+  --bg-hover: rgba(0, 255, 65, 0.08);
+  --line: rgba(0, 255, 65, 0.22);
+  --line-strong: rgba(0, 255, 65, 0.5);
+  --green: #00ff41;
+  --green-bright: #8dffb8;
+  --green-dim: #1e9e4d;
+  --green-faint: #0d5c2e;
+  --text: #c9ffd8;
+  --text-dim: #74c493;
+  --text-faint: #3e8a5c;
+  --red: #ff3b5c;
+  --red-bg: rgba(255, 59, 92, 0.1);
+  --amber: #ffc857;
+  --amber-bg: rgba(255, 200, 87, 0.1);
+  --blue: #4dc9ff;
+  --code-bg: #03100a;
+  --input-bg: #020a05;
+  --sel-bg: rgba(0, 255, 65, 0.35);
+  --sel-color: #eafff1;
+  --scroll-track: #030a06;
+  --warn-text: #ffb3c2;
+  --info-text: #bfe9ff;
+  --canvas-bg: rgba(0, 0, 0, 0.25);
+  --mono: 'Cascadia Mono', 'JetBrains Mono', Consolas, 'Courier New', monospace;
+  --sans: 'PingFang SC', 'Microsoft YaHei', 'Noto Sans SC', system-ui, sans-serif;
+  --radius: 6px;
+  --shadow: 0 0 18px rgba(0, 255, 65, 0.12);
+}
+
+/* ============================================================
+   亮色模式（暖白 · 墨绿 Matrix）
+   ============================================================ */
+html[data-theme='light'] {
+  --bg: #f2f8f3;
+  --bg-panel: rgba(255, 255, 255, 0.92);
+  --bg-panel-solid: #ffffff;
+  --bg-hover: rgba(0, 140, 51, 0.07);
+  --line: rgba(0, 120, 50, 0.25);
+  --line-strong: rgba(0, 120, 50, 0.55);
+  --green: #008c33;
+  --green-bright: #00521f;
+  --green-dim: #2e9e5b;
+  --green-faint: #7fb98f;
+  --text: #14351f;
+  --text-dim: #3e6b4e;
+  --text-faint: #6f9379;
+  --red: #c62828;
+  --red-bg: rgba(198, 40, 40, 0.08);
+  --amber: #a26200;
+  --amber-bg: rgba(162, 98, 0, 0.1);
+  --blue: #0f6fb3;
+  --code-bg: #f0f6f1;
+  --input-bg: #ffffff;
+  --sel-bg: rgba(0, 150, 60, 0.25);
+  --sel-color: #04330f;
+  --scroll-track: #e6efe8;
+  --warn-text: #a0182e;
+  --info-text: #0b5f8a;
+  --canvas-bg: rgba(0, 110, 45, 0.05);
+  --shadow: 0 0 18px rgba(0, 110, 45, 0.08);
+}
+
+html[data-theme='light'] .matrix-rain {
+  opacity: 0.08;
+}
+
+html[data-theme='light'] .glitch {
+  text-shadow:
+    0 0 10px rgba(0, 120, 50, 0.35),
+    0 0 40px rgba(0, 120, 50, 0.15);
+}
+
+html[data-theme='light'] .slogan {
+  text-shadow: 0 0 12px rgba(198, 40, 40, 0.25);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 15px;
+  line-height: 1.75;
+  min-height: 100vh;
+}
+
+::selection {
+  background: var(--sel-bg);
+  color: var(--sel-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--scroll-track);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--green-faint);
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--green-dim);
+}
+
+a {
+  color: var(--green);
+  text-decoration: none;
+  border-bottom: 1px dotted rgba(0, 255, 65, 0.35);
+}
+a:hover {
+  color: var(--green-bright);
+  border-bottom-style: solid;
+}
+
+/* ---------- 面板 ---------- */
+.panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(4px);
+}
+
+/* ---------- 按钮 ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--green);
+  background: transparent;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+.btn:hover {
+  background: var(--bg-hover);
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.25);
+}
+.btn.on {
+  background: rgba(0, 255, 65, 0.15);
+  border-color: var(--green);
+  color: var(--green-bright);
+}
+.btn.danger {
+  color: var(--red);
+  border-color: rgba(255, 59, 92, 0.5);
+}
+.btn.danger.on {
+  background: var(--red-bg);
+  border-color: var(--red);
+}
+.btn.amber {
+  color: var(--amber);
+  border-color: rgba(255, 200, 87, 0.5);
+}
+.btn.amber.on {
+  background: var(--amber-bg);
+  border-color: var(--amber);
+}
+
+/* ---------- 标签 ---------- */
+.tag {
+  display: inline-block;
+  padding: 1px 8px;
+  font-family: var(--mono);
+  font-size: 12px;
+  line-height: 1.6;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--text-dim);
+  background: rgba(0, 255, 65, 0.05);
+  white-space: nowrap;
+}
+.tag.knowledge {
+  color: var(--green);
+  border-color: rgba(0, 255, 65, 0.4);
+}
+.tag.example {
+  color: var(--blue);
+  border-color: rgba(77, 201, 255, 0.4);
+}
+.tag.mnemonic {
+  color: var(--amber);
+  border-color: rgba(255, 200, 87, 0.4);
+}
+.tag.draft {
+  color: var(--amber);
+  border-color: rgba(255, 200, 87, 0.4);
+}
+.tag.reviewed {
+  color: var(--green);
+  border-color: rgba(0, 255, 65, 0.4);
+}
+
+/* ---------- 内容区排版（markdown 渲染结果） ---------- */
+.content {
+  word-break: break-word;
+  font-size: var(--content-size, 15px);
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+  color: var(--green-bright);
+  font-family: var(--mono);
+  letter-spacing: 0.5px;
+}
+.content h1 {
+  font-size: 22px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 8px;
+}
+.content h2 {
+  font-size: 18px;
+  margin-top: 28px;
+}
+.content h3 {
+  font-size: 16px;
+}
+.content blockquote {
+  margin: 12px 0;
+  padding: 8px 16px;
+  border-left: 3px solid var(--green);
+  background: rgba(0, 255, 65, 0.06);
+  color: var(--text);
+}
+.content blockquote p {
+  margin: 4px 0;
+}
+.content code {
+  font-family: var(--mono);
+  font-size: 13px;
+  background: rgba(0, 255, 65, 0.1);
+  border: 1px solid rgba(0, 255, 65, 0.2);
+  border-radius: 3px;
+  padding: 1px 5px;
+  color: var(--green-bright);
+}
+.content pre {
+  background: var(--code-bg);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 12px 16px;
+  overflow-x: auto;
+}
+.content pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 13px;
+}
+.content table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 12px 0;
+  font-size: 14px;
+}
+.content th,
+.content td {
+  border: 1px solid var(--line);
+  padding: 6px 12px;
+  text-align: left;
+}
+.content th {
+  background: rgba(0, 255, 65, 0.08);
+  color: var(--green-bright);
+  font-family: var(--mono);
+  font-weight: normal;
+}
+.content tr:nth-child(even) td {
+  background: rgba(0, 255, 65, 0.02);
+}
+.content ul,
+.content ol {
+  padding-left: 24px;
+}
+.content li {
+  margin: 4px 0;
+}
+.content hr {
+  border: none;
+  border-top: 1px solid var(--line);
+  margin: 20px 0;
+}
+.content .katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 4px 0;
+}
+.content img {
+  max-width: 100%;
+}
+
+/* ---------- 风险 / 警告框 ---------- */
+.warn-box {
+  border: 1px solid var(--red);
+  background: var(--red-bg);
+  color: var(--warn-text);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  margin: 10px 0;
+  font-size: 13.5px;
+}
+.warn-box .warn-title {
+  color: var(--red);
+  font-family: var(--mono);
+  font-weight: bold;
+  margin-right: 6px;
+}
+.info-box {
+  border: 1px solid rgba(77, 201, 255, 0.4);
+  background: rgba(77, 201, 255, 0.06);
+  color: var(--info-text);
+  border-radius: var(--radius);
+  padding: 10px 14px;
+  margin: 10px 0;
+  font-size: 13.5px;
+}
+
+/* ---------- 骨架屏 ---------- */
+.skeleton {
+  border-radius: var(--radius);
+  background: linear-gradient(90deg, rgba(0, 255, 65, 0.05), rgba(0, 255, 65, 0.12), rgba(0, 255, 65, 0.05));
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+/* ---------- 终端输入 ---------- */
+.term-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--input-bg);
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  padding: 6px 12px;
+  font-family: var(--mono);
+  color: var(--green);
+}
+.term-input:focus-within {
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.25);
+  border-color: var(--green);
+}
+.term-input .prompt {
+  color: var(--green-dim);
+}
+.term-input input {
+  flex: 1;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--green);
+  font-family: var(--mono);
+  font-size: 14px;
+  caret-color: var(--green);
+}
+.term-input input::placeholder {
+  color: var(--text-faint);
+}
+
+/* ---------- 数字雨遮罩之上的内容层 ---------- */
+#app {
+  position: relative;
+  z-index: 1;
+}
+
+/* ---------- 打印（把知识点/例题打印成复习资料） ---------- */
+@media print {
+  body {
+    background: #fff !important;
+    color: #000 !important;
+    font-size: 12px !important;
+  }
+  .matrix-rain,
+  .topbar,
+  .footer,
+  .sidebar,
+  .actions,
+  .siblings,
+  .crumbs,
+  .hero-actions,
+  .notice,
+  .tabs,
+  .head-actions {
+    display: none !important;
+  }
+  .node-page {
+    display: block !important;
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  .panel,
+  .content-area,
+  .sol {
+    background: #fff !important;
+    border: none !important;
+    box-shadow: none !important;
+    backdrop-filter: none !important;
+    padding: 0 !important;
+  }
+  .content h1,
+  .content h2,
+  .content h3,
+  .content h4,
+  .sol-title {
+    color: #000 !important;
+    border-bottom-color: #999 !important;
+  }
+  .content a {
+    color: #000 !important;
+    text-decoration: underline;
+    border-bottom: none !important;
+  }
+  .content code,
+  .content pre {
+    background: #f5f5f5 !important;
+    color: #000 !important;
+    border-color: #ccc !important;
+  }
+  .content th {
+    background: #eee !important;
+    color: #000 !important;
+  }
+  .warn-box {
+    border-color: #f00 !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .info-box {
+    border-color: #666 !important;
+    background: #fff !important;
+    color: #000 !important;
+  }
+  .dual {
+    grid-template-columns: 1fr !important;
+  }
+  .sol.evil {
+    border: 1px solid #999 !important;
+    box-shadow: none !important;
+  }
+  .tag {
+    border-color: #999 !important;
+    color: #000 !important;
+    background: #fff !important;
+  }
+  .katex {
+    color: #000 !important;
+  }
+  .content-area {
+    min-height: 0 !important;
+  }
+  #app {
+    position: static !important;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}
