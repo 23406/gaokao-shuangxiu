@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 408" width="340" height="408">
+  <!-- 抛物线 y²=4x：OA⊥OB ⇒ 弦恒过定点 (4,0) -->
+  <text x="170" y="16" font-size="12.5" fill="#444" font-family="sans-serif" text-anchor="middle">y² = 4x：OA⊥OB ⇒ 弦 AB 恒过定点 M(2p,0) = (4,0)</text>
+  <!-- 坐标系 -->
+  <defs>
+    <marker id="pf-a" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#444"/>
+    </marker>
+  </defs>
+  <line x1="40" y1="240" x2="330" y2="240" stroke="#444" stroke-width="1.4" marker-end="url(#pf-a)"/>
+  <line x1="60" y1="40" x2="60" y2="392" stroke="#444" stroke-width="1.4" marker-end="url(#pf-a)"/>
+  <text x="326" y="232" font-size="11.5" fill="#444" font-family="sans-serif">x</text>
+  <text x="46" y="248" font-size="11.5" fill="#444" font-family="sans-serif">O</text>
+  <!-- x 轴刻度与标签 -->
+  <line x1="96" y1="235" x2="96" y2="245" stroke="#8a8a8a" stroke-width="1"/>
+  <line x1="204" y1="235" x2="204" y2="245" stroke="#8a8a8a" stroke-width="1"/>
+  <line x1="312" y1="235" x2="312" y2="245" stroke="#8a8a8a" stroke-width="1"/>
+  <text x="96" y="260" font-size="11" fill="#666" font-family="sans-serif" text-anchor="middle">1</text>
+  <text x="204" y="260" font-size="11" fill="#666" font-family="sans-serif" text-anchor="middle">4</text>
+  <text x="312" y="260" font-size="11" fill="#666" font-family="sans-serif" text-anchor="middle">7</text>
+  <!-- 抛物线 y=±2√x（x 尺度 36px/单位，y 尺度 26px/单位） -->
+  <polyline points="60,240 69,214 78,203.2 96,188 132,166.5 168,149.9 204,136 240,123.7 276,112.7 312,102.4"
+            fill="none" stroke="#1565c0" stroke-width="2.2"/>
+  <polyline points="60,240 69,266 78,276.8 96,292 132,313.5 168,330.1 204,344 240,356.3 276,367.3 312,377.6"
+            fill="none" stroke="#1565c0" stroke-width="2.2"/>
+  <!-- 点与标注 -->
+  <circle cx="96" cy="188" r="4" fill="#222"/>
+  <text x="102" y="178" font-size="11.5" fill="#555" font-family="sans-serif">O 为顶点</text>
+  <circle cx="204" cy="136" r="4" fill="#c62828"/>
+  <circle cx="204" cy="344" r="4" fill="#c62828"/>
+  <text x="210" y="130" font-size="12" fill="#555" font-family="sans-serif">A(4,4)</text>
+  <text x="210" y="352" font-size="12" fill="#555" font-family="sans-serif">B(4,−4)</text>
+  <!-- 弦 AB（竖直线 x=4，恒过 M） -->
+  <line x1="204" y1="136" x2="204" y2="344" stroke="#c62828" stroke-width="2.2"/>
+  <circle cx="204" cy="240" r="5" fill="none" stroke="#c62828" stroke-width="2.2"/>
+  <text x="210" y="252" font-size="12" fill="#c62828" font-family="sans-serif">M(4,0)</text>
+  <!-- 第二弦 CD（也过 M）：C(2.25,3)，D(7.11,−5.33) -->
+  <circle cx="141" cy="162" r="4" fill="#e65100"/>
+  <circle cx="316" cy="378.6" r="4" fill="#e65100"/>
+  <line x1="141" y1="162" x2="316" y2="378.6" stroke="#e65100" stroke-width="2" stroke-dasharray="7,4"/>
+  <text x="125" y="152" font-size="12" fill="#e65100" font-family="sans-serif">C</text>
+  <text x="296" y="374" font-size="12" fill="#e65100" font-family="sans-serif">D</text>
+  <!-- 垂直角标记 ∠AOB = 90° -->
+  <path d="M86,232 A20,20 0 0 1 92,242" fill="none" stroke="#666" stroke-width="1.2"/>
+  <text x="70" y="222" font-size="11" fill="#666" font-family="sans-serif">90°</text>
+  <!-- 底部推导 -->
+  <text x="170" y="381" font-size="10.5" fill="#666" font-family="sans-serif" text-anchor="middle">设 AB: x = my + t ⇒ y² − 4my − 4t = 0</text>
+  <text x="170" y="394" font-size="10.5" fill="#666" font-family="sans-serif" text-anchor="middle">y₁y₂ = −4t，x₁x₂ = t²；垂直 ⇒ x₁x₂ + y₁y₂ = 0 ⇒ t = 4</text>
+</svg>
