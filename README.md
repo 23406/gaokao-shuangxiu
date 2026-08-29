@@ -35,7 +35,7 @@
 
 **https://23406.github.io/gaokao-shuangxiu/**
 
-由 GitHub Pages 免费托管，推送 `main` 分支后自动重新构建部署（GitHub Actions），无需任何手动操作。
+由 GitHub Pages 免费托管：仓库 `main` 分支存放源码，`gh-pages` 分支存放构建产物（`dist/`），站点直接从 `gh-pages` 分支发布，无需服务器。
 
 > 🇨🇳 **国内访问说明**：GitHub Pages 域名（`github.io`）在国内大部分时间、大部分网络可以正常打开，但可用性随运营商/时段波动。如果哪天打不开或很慢，可以用免费的 **腾讯云 EdgeOne Pages** 挂一个国内节点直连的地址（构建命令 `npm run build`、输出目录 `dist`，同样连 GitHub 仓库、同样 push 即自动发布）。
 
@@ -78,7 +78,7 @@ Vite + Vue 3 + TypeScript + vue-router（**hash 路由**，静态托管零配置
 
 1. 在 `content/` 下新建或修改 Markdown（格式见 `content/_schema.md`）。
 2. 本地 `npm run build` 确认内容管线通过（无断链、无 KaTeX 错误）。
-3. `git push`，站点自动重新构建部署。
+3. 本地 `npm run build`，然后把构建产物 `dist/` 更新到 `gh-pages` 分支（站点从该分支发布，更新自动生效）。
 
 ## 🤝 贡献
 
