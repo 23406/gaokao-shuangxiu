@@ -1,0 +1,1 @@
+import{j as c}from"./index-CbcHDNOq.js";let n=null;function o(){const t=c(null);return n||(n=fetch("./content/index.json").then(e=>e.json()),n.catch(()=>{n=null})),n.then(e=>{t.value=e}),t}export{o as u};
