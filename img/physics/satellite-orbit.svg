@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 275" width="340" height="275">
+  <!-- 卫星变轨：两次点火圆轨抬升 -->
+  <text x="170" y="16" font-size="12.5" fill="#444" font-family="sans-serif" text-anchor="middle">低轨 → 高轨：两次点火加速（一次入椭圆，一次圆轨化）</text>
+  <!-- 地球 -->
+  <circle cx="170" cy="140" r="26" fill="#b3d9f0" stroke="#0d47a1" stroke-width="1.5"/>
+  <text x="170" y="145" font-size="11.5" fill="#0d47a1" font-family="sans-serif" text-anchor="middle">地球</text>
+  <!-- 圆轨道 r1（低轨）与 r2（高轨） -->
+  <circle cx="170" cy="140" r="64" fill="none" stroke="#666" stroke-width="1.2" stroke-dasharray="5,4"/>
+  <text x="40" y="86" font-size="11.5" fill="#555" font-family="sans-serif">r₁（低轨，v 大）</text>
+  <circle cx="170" cy="140" r="108" fill="none" stroke="#90a4ae" stroke-width="1.2" stroke-dasharray="5,4"/>
+  <text x="40" y="66" font-size="11.5" fill="#607d8b" font-family="sans-serif">r₂（高轨，v 小）</text>
+  <!-- 椭圆转移轨道：近地点在 r1、远地点在 r2 -->
+  <ellipse cx="148" cy="140" rx="86" ry="58" fill="none" stroke="#e65100" stroke-width="2" stroke-dasharray="8,4"/>
+  <!-- 点火点 -->
+  <rect x="230" y="136" width="9" height="8" fill="#c62828"/>
+  <text x="242" y="130" font-size="11.5" fill="#c62828" font-family="sans-serif">点火 ①</text>
+  <rect x="58" y="136" width="9" height="8" fill="#c62828"/>
+  <text x="72" y="130" font-size="11.5" fill="#c62828" font-family="sans-serif">点火 ②</text>
+  <!-- 底部说明 -->
+  <text x="170" y="262" font-size="11" fill="#666" font-family="sans-serif" text-anchor="middle">近/远地点的加速度只由位置决定（a = GM/r²），变轨前后相同</text>
+  <text x="170" y="272" font-size="10.5" fill="#888" font-family="sans-serif" text-anchor="middle">高轨：速度小、机械能大；低轨：速度大、机械能小</text>
+</svg>
