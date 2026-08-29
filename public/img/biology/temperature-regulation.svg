@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 340" width="560" height="340">
+  <!-- 寒冷时体温调节流程：神经-体液调节 -->
+  <defs>
+    <marker id="tb-a" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#444"/>
+    </marker>
+  </defs>
+  <text x="280" y="16" font-size="12.5" fill="#444" font-family="sans-serif" text-anchor="middle">寒冷时体温调节：神经—体液调节，维持产热＝散热</text>
+  <!-- 框1 -->
+  <rect x="90" y="28" width="380" height="40" rx="8" fill="#f6faf7" stroke="#888" stroke-width="1.2"/>
+  <text x="280" y="52" font-size="12.5" fill="#333" font-family="sans-serif" text-anchor="middle">寒冷刺激 → 皮肤冷觉感受器兴奋</text>
+  <line x1="280" y1="68" x2="280" y2="94" stroke="#444" stroke-width="1.6" marker-end="url(#tb-a)"/>
+  <!-- 框2 -->
+  <rect x="90" y="94" width="380" height="40" rx="8" fill="#eef4fb" stroke="#1565c0" stroke-width="1.4"/>
+  <text x="280" y="118" font-size="12.5" fill="#1565c0" font-family="sans-serif" text-anchor="middle">下丘脑体温调节中枢（神经中枢 + 分泌细胞）</text>
+  <!-- 三分支 -->
+  <line x1="150" y1="134" x2="105" y2="166" stroke="#444" stroke-width="1.6" marker-end="url(#tb-a)"/>
+  <line x1="280" y1="134" x2="280" y2="166" stroke="#444" stroke-width="1.6" marker-end="url(#tb-a)"/>
+  <line x1="410" y1="134" x2="455" y2="166" stroke="#444" stroke-width="1.6" marker-end="url(#tb-a)"/>
+  <rect x="20" y="166" width="170" height="66" rx="8" fill="#f6faf7" stroke="#888" stroke-width="1.2"/>
+  <text x="105" y="188" font-size="11.5" fill="#333" font-family="sans-serif" text-anchor="middle">皮肤血管收缩</text>
+  <text x="105" y="204" font-size="11.5" fill="#333" font-family="sans-serif" text-anchor="middle">汗腺分泌减少</text>
+  <text x="105" y="222" font-size="11" fill="#c62828" font-family="sans-serif" text-anchor="middle">（散热减少）</text>
+  <rect x="195" y="166" width="170" height="66" rx="8" fill="#f6faf7" stroke="#888" stroke-width="1.2"/>
+  <text x="280" y="188" font-size="11.5" fill="#333" font-family="sans-serif" text-anchor="middle">骨骼肌战栗</text>
+  <text x="280" y="204" font-size="11.5" fill="#333" font-family="sans-serif" text-anchor="middle">（产热增加）</text>
+  <text x="280" y="222" font-size="11" fill="#c62828" font-family="sans-serif" text-anchor="middle">神经调节</text>
+  <rect x="370" y="166" width="170" height="66" rx="8" fill="#f6faf7" stroke="#888" stroke-width="1.2"/>
+  <text x="455" y="188" font-size="11.5" fill="#333" font-family="sans-serif" text-anchor="middle">甲状腺激素、肾上腺素</text>
+  <text x="455" y="204" font-size="11.5" fill="#333" font-family="sans-serif" text-anchor="middle">分泌增多</text>
+  <text x="455" y="222" font-size="11" fill="#c62828" font-family="sans-serif" text-anchor="middle">（体液调节·产热↑）</text>
+  <!-- 汇总 -->
+  <line x1="105" y1="232" x2="195" y2="262" stroke="#444" stroke-width="1.6" marker-end="url(#tb-a)"/>
+  <line x1="280" y1="232" x2="280" y2="262" stroke="#444" stroke-width="1.6" marker-end="url(#tb-a)"/>
+  <line x1="455" y1="232" x2="365" y2="262" stroke="#444" stroke-width="1.6" marker-end="url(#tb-a)"/>
+  <rect x="140" y="262" width="280" height="42" rx="8" fill="#f6faf7" stroke="#888" stroke-width="1.2"/>
+  <text x="280" y="287" font-size="12.5" fill="#333" font-family="sans-serif" text-anchor="middle">产热 = 散热（动态平衡）→ 体温维持正常</text>
+  <text x="280" y="326" font-size="11" fill="#666" font-family="sans-serif" text-anchor="middle">下丘脑还通过“分级调节”控制甲状腺：下丘脑→垂体→甲状腺（激素调节）</text>
+</svg>
