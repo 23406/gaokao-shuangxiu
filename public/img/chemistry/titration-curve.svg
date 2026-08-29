@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 215" width="320" height="215">
+  <defs>
+    <marker id="ah" markerWidth="9" markerHeight="9" refX="7.5" refY="4.5" orient="auto">
+      <path d="M0,0 L8,4.5 L0,9 z" fill="#444"/>
+    </marker>
+  </defs>
+  <line x1="45" y1="195" x2="300" y2="195" stroke="#444" stroke-width="1.5" marker-end="url(#ah)"/>
+  <line x1="45" y1="195" x2="45" y2="20" stroke="#444" stroke-width="1.5" marker-end="url(#ah)"/>
+  <text x="188" y="211" font-size="11" fill="#444" font-family="sans-serif">加入 NaOH 的体积 V/mL</text>
+  <text x="20" y="24" font-size="11" fill="#444" font-family="sans-serif">pH</text>
+  <!-- 0.1mol/L NaOH 滴定 20mL 0.1mol/L CH₃COOH：pH 从低到高，20mL 处突跃 -->
+  <path d="M45,170 C 100,168 140,152 170,126
+           C 180,116 184,104 188,92
+           C 194,72 205,58 245,50
+           C 268,46 288,44 300,43"
+        fill="none" stroke="#1565c0" stroke-width="2.2"/>
+  <!-- 等当点（20mL，pH≈8.7） -->
+  <line x1="188" y1="92" x2="188" y2="195" stroke="#c62828" stroke-width="1" stroke-dasharray="4,3"/>
+  <circle cx="188" cy="92" r="4.5" fill="#c62828" stroke="none"/>
+  <text x="198" y="106" font-size="11" fill="#c62828" font-family="sans-serif">等当点(20mL)</text>
+  <!-- 酚酞变色区 pH 8.2~10 -->
+  <rect x="45" y="76" width="255" height="22" fill="#ffc857" opacity="0.16" stroke="none"/>
+  <text x="52" y="92" font-size="11" fill="#b26a00" font-family="sans-serif">酚酞变色区 pH 8.2~10（突跃范围内 ✓）</text>
+  <!-- 起点说明 -->
+  <text x="50" y="188" font-size="10.5" fill="#666" font-family="sans-serif">0.1mol/L CH₃COOH（pH≈2.9）</text>
+  <text x="50" y="30" font-size="10.5" fill="#666" font-family="sans-serif">滴定终点 pH>7：弱酸强碱盐水解显碱性</text>
+  <text x="230" y="74" font-size="10.5" fill="#2e7d32" font-family="sans-serif">突跃</text>
+</svg>
